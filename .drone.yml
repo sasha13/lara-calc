@@ -1,0 +1,9 @@
+kind: pipeline
+type: docker
+name: lara-calc
+
+steps:
+  - name: calculator
+  image: sasha13/lara-calc
+  commands:
+    - php artisan serve
